@@ -77,8 +77,7 @@ dependencies {
     coreLibraryDesugaring 'com.android.tools:desugar_jdk_libs:1.1.5'
 
     // Coil
-    implementation "io.coil-kt:coil:1.1.1"
-    implementation "com.google.accompanist:accompanist-coil:0.7.0"
+    implementation("io.coil-kt:coil-compose:2.1.0")
 
     // Compose dependencies
     def nav_version = "2.4.2"

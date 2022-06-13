@@ -21,6 +21,9 @@ object AppModule {
         api:PokeConApi
     )= PokeConRepository(api)
 
+
+    @Singleton
+    @Provides
     fun providePokeApi(): PokeConApi{
         return Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create())
